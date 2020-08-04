@@ -27,6 +27,14 @@
     "url": "https://github.com/NTV-97/generator-component-cli/issues"
   },
   "keywords": [
-    "CLI"
-  ]
+    "cli",
+    "react-native",
+    "generator",
+    "component",
+    "generator-component",
+    "react-native-generator"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
