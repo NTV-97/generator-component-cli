@@ -1,0 +1,32 @@
+{
+  "name": "react-native-generator-cli",
+  "version": "0.0.11",
+  "description": "react-native generate components CLI",
+  "main": "plopfile.js",
+  "dependencies": {
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "npm": "^6.14.7",
+    "plop": "^2.7.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "plop"
+  },
+  "bin": {
+    "generate": "./bin/index.js"
+  },
+  "author": "ThanhVinh",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NTV-97/generator-component-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/NTV-97/generator-component-cli/issues"
+  },
+  "keywords": [
+    "CLI"
+  ]
+}
