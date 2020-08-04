@@ -1,0 +1,39 @@
+import React, { Component } from "react";
+import { StyleSheet, View, Text } from "react-native";
+
+interface {{pascalCase name}}Props {
+    any:any
+}
+
+
+interface {{pascalCase name}}State {
+    any:any
+}
+
+
+class {{pascalCase name}}Screen extends Component<{{pascalCase name}}Props, {{pascalCase name}}State> {
+    constructor(props: {{pascalCase name}}Props) {
+        super(props);
+        this.state = {};
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <Text>{{pascalCase name}}</Text>
+            </View>
+        );
+    }
+}
+
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+});
+
+
+export default {{pascalCase name}};
