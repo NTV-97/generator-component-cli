@@ -6,13 +6,8 @@
 # Installation
 ### Install from `npm` 
 ```
-npm install -g plop
+npm install -g plop react-native-generator-cli
 npm install -D react-native-generator-cli
-```
-### Install from `yarn` 
-```
-yarn global add plop
-yarn add -D react-native-generator-cli
 ```
 # Usage
 ### 1. Copy script 
