@@ -14,7 +14,7 @@ npm install -D react-native-generator-cli
 ```
 "scripts": {
     ...,
-    "generate": "cd node_modules/react-native-generator-cli && generate && cd ../../"
+    "generate": "cd node_modules/react-native-generator-cli && generate && cd ../.."
 },
 ```
 ### to package.json
