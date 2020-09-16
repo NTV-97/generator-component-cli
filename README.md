@@ -103,20 +103,20 @@ yarn pod or npm pod
     Replace line:
 
     ```
-      implementation "com.squareup.sdk.in-app-payments:buyer-verification:\$sqipVersion"
+    implementation "com.squareup.sdk.in-app-payments:buyer-verification:\$sqipVersion"
     ```
 
     With:
 
-  ```
+    ```
     compile ("com.squareup.sdk.in-app-payments:buyer-verification:\$sqipVersion") {
       exclude group: 'com.nds.threeds', module: 'threedssdk-release'
     }
-  ```
+    ```
 
 ## IOS configuration
 
-### Make sure you have `**cocoapods**` version greater than 1.7.0
+### Make sure you have **`cocoapods`** version greater than 1.7.0
 
 ### if you cant's run ios:
 
@@ -130,14 +130,16 @@ yarn pod or npm pod
   - In the Build Phases tab for your application target, click the + button at the top of the pane.
   - Select New Run Script Phase.
   - Paste the following into the editor panel of the new run script:
-  ```
-  FRAMEWORKS="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}"
-  "\${FRAMEWORKS}/SquareInAppPaymentsSDK.framework/setup"
-  ```
+    ```
+    FRAMEWORKS="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+    "\${FRAMEWORKS}/SquareInAppPaymentsSDK.framework/setup"
+    ```
 - In the left menu Xcode:
   - Find Pods folder and delete it
   - Now in terminal, go into your project dir, cd into ios and do rm -rf Pods Podfile.lock
   - Do pod install
+
+# BugSnag
 
 **BugSnag: Error monitoring** `https://app.bugsnag.com/accounts/nls/projects/gorilladesk-dev/integrate` `(dev@namlongsoft.net / nlsdev.2020)`
 
