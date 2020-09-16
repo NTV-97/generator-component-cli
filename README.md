@@ -120,22 +120,24 @@ yarn pod or npm pod
 
 ### if you cant's run ios:
 
-1. Open Podfile, find line: platform :ios
-   if platform :ios, '9.0' you change this to: platform :ios, '11.0'
-2. Open GorillaDesk.xcworkspace in folder ios. Choose Product => Build
+1. Open **Podfile**, find line: **platform :ios**
 
-- Set the iOS Deployment Target to 11.0 or above
+- If `platform :ios, '9.0'` you change this to: `platform :ios, '11.0'`
+
+2. Open **GorillaDesk.xcworkspace** in folder _ios_. Choose **`Product => Build`**
+
+- Set the **iOS Deployment Target** to _11.0_ or above
 - Add an In-App Payments SDK build phase:
   - Open the Xcode project for your application.
-  - In the Build Phases tab for your application target, click the + button at the top of the pane.
-  - Select New Run Script Phase.
+  - In the **Build Phases** tab for your application target, click the + button at the top of the pane.
+  - Select **New Run Script Phase**.
   - Paste the following into the editor panel of the new run script:
     ```
     FRAMEWORKS="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}"
     "\${FRAMEWORKS}/SquareInAppPaymentsSDK.framework/setup"
     ```
 - In the left menu Xcode:
-  - Find Pods folder and delete it
+  - Find **Pods** folder and delete it
   - Now in terminal, go into your project dir, cd into ios and do `rm -rf Pods Podfile.lock`
   - Do `pod install`
 
