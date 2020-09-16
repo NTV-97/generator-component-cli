@@ -233,7 +233,7 @@ pod install
 
 - Edit Info.plist. The plugin adds default values for the following plist elements. You will need to change these values as desired.
   | Key | Value | Description |
-  | :--- | :--- | :--- |
+  | --- | --- | --- |
   | Privacy - LocationAlwaysUsageDescription | This app requires background tracking | Deprecated in iOS 11 The value here will be presented to the user when the plugin requests Background Location permission |
   | Privacy - LocationAlwaysAndWhenInUseUsageDescription | This app requires background tracking | New for iOS 11 The value here will be presented to the user when the plugin requests Background Location permission |
   | Privacy - MotionUsageDescription | Accelerometer use increases battery efficiency by intelligently toggling location-tracking | The value here will be presented to the user when the app requests Motion Activity permission. |
