@@ -136,8 +136,8 @@ yarn pod or npm pod
     ```
 - In the left menu Xcode:
   - Find Pods folder and delete it
-  - Now in terminal, go into your project dir, cd into ios and do rm -rf Pods Podfile.lock
-  - Do pod install
+  - Now in terminal, go into your project dir, cd into ios and do `rm -rf Pods Podfile.lock`
+  - Do `pod install`
 
 # BugSnag
 
